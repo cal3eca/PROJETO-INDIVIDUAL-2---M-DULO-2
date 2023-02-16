@@ -78,3 +78,25 @@ requisitadas como profeciência para a vaga 1 ou vaga 2.
                   print('*' * 50)
                   n_aprovado2.append(cand1['nome'])
 
+>> Em seguida vem a parte final, onde são exibidos os resultados obtidos baseados nos candidatos cadastrados.
+>> Começando por uma maneira de sair do looping (WHILE)
+
+        a = input('DIGITE (S) PARA CONTINUAR E (N) PARA SAIR: ')
+        sair = a.lower()
+        
+>>Seguindo com a parte onde vão ser printados todos os resultados pedidos no projeto.
+>> Com uma condicional, que só vão ser printados os resultados na tela, quando o usuário não quiser mais cadastrar nenhum candidato.
+
+        aprovados = []
+        aprovados += (vaga1 + vaga2)
+        if sair == 'n':
+            print('')
+            contagem1 = len(vaga1 + n_aprovado1)
+            contagem2 = len(vaga2 + n_aprovado2)
+            print('O número de candidatos, inscritos para a primeira vaga é: ', contagem1)
+            print('CANDIDATOS APROVADOS NA PRIMEIRA VAGA: ', '\nNOMES: ', vaga1, '\nQuantidade: ', len(vaga1))
+            print('TOTAL: ', contagem1)
+            print('*' * 50)
+            print('O número de candidatos, inscritos para a segunda vaga é: ', contagem2)
+            print('CANDIDATOS APROVADOS NA SEGUNDA VAGA: ', '\nNOMES: ', vaga2, '\nQuantidade: ', len(vaga2))
+            print('TOTAL: ', contagem2)
