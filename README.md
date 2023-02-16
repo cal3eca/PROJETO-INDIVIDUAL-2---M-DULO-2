@@ -1,4 +1,4 @@
-# PROJETO-INDIVIDUAL-2---M-DULO-2
+# PROJETO-INDIVIDUAL-2---MÓDULO-2
 Projeto individual do módulo 2 - SENAC - RESILIA
 
 Esse repositório contem os arquivos que foram utilizados para a realização do projeto indivual 1, do módulo 2.
