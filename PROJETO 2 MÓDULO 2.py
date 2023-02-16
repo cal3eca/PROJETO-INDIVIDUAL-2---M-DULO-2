@@ -17,7 +17,8 @@ pessoa se inscreveu e o resumo que a pessoa enviou em
 busca dessas informações.
 '''
 
-
+from os import system as sy
+import pandas as pd
 
 
 def listas():
@@ -31,7 +32,7 @@ n_aprovado2 = []
 def aprovado():
     sair = 's'
     while sair == 's':
-        tipo_vaga = int(input('DIGITE (1)PARA A VAGA 1\n DIGITE (2) PARA A VAGA 2'))
+        tipo_vaga = int(input('DIGITE (1)PARA A VAGA 1:\nDIGITE (2)PARA A VAGA 2: \n'))
         if tipo_vaga == 1:
             print('A VAGA BUSCADA É 1')
             cand1 = {'nome': input('Digite o nome: '), 'p1': input('Digite a Primeira palavra chave: '),
@@ -59,18 +60,23 @@ def aprovado():
                 n_aprovado2.append(cand1['nome'])
         a = input('DIGITE (S) PARA CONTINUAR E (N) PARA SAIR: ')
         sair = a.lower()
+        aprovados = []
+        aprovados += (vaga1 + vaga2)
         if sair == 'n':
             print('')
             contagem1 = len(vaga1 + n_aprovado1)
             contagem2 = len(vaga2 + n_aprovado2)
             print('O número de candidatos, inscritos para a primeira vaga é: ', contagem1)
             print('CANDIDATOS APROVADOS NA PRIMEIRA VAGA: ', '\nNOMES: ', vaga1, '\nQuantidade: ', len(vaga1))
-            print('TOTAL: ' )
+            print('TOTAL: ', contagem1)
             print('*' * 50)
             print('O número de candidatos, inscritos para a segunda vaga é: ', contagem2)
             print('CANDIDATOS APROVADOS NA SEGUNDA VAGA: ', '\nNOMES: ', vaga2, '\nQuantidade: ', len(vaga2))
-
+            print('TOTAL: ', contagem2)
 
 
 listas()
 aprovado()
+list(zip(vaga1,vaga2))
+tabela = pd.DataFrame(data=zip(vaga1,vaga2), columns=['APROVADOS VAGA (1)','APROVADOS VAGA(2)'])
+print(tabela)
