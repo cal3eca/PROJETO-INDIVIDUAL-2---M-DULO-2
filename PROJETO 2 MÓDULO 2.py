@@ -18,7 +18,6 @@ busca dessas informações.
 '''
 import os
 import pandas as pd
-print(dir(pd))
 
 
 def listas():
