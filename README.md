@@ -51,7 +51,7 @@ seguido de um dícionário para guardar o nome dos candidatos, e as palavras cha
                          }
 >>REFERENTE AO PRIMEIRO MENU ACIMA, E REFERENTE AO SEGUNDO MENU, QUE LEVA PARA A SEGUNDA VAGA.
 
-             if tipo_vaga == 2:
+            if tipo_vaga == 2:
                 print('A VAGA BUSCADA É 2')
                 cand1 = {'nome': input('Digite o nome: '), 'p1': input('Digite a Primeira palavra chave: '),
                      'p2': input('Digite a segunda palavra chave: '), 'p3': input('Digite a terceira palavra chave: '),
@@ -62,19 +62,19 @@ seguido de um dícionário para guardar o nome dos candidatos, e as palavras cha
 Em seguida, utilizando condicionais (if), são feitos testes, que comparam as palavras chaves dentro do dicionário, com as
 requisitadas como profeciência para a vaga 1 ou vaga 2.
 
-              if 'Python' in cand1.values() and 'Programação' in cand1.values() and 'Desenvolvimento' in and1.values():
-                    print("*" * 50)
-                    vaga1.append(cand1['nome'])
-              else:
-                    print('*' * 50)
-                    n_aprovado1.append(cand1['nome'])
+           if 'Python' in cand1.values() and 'Programação' in cand1.values() and 'Desenvolvimento' in and1.values():
+                 print("*" * 50)
+                 vaga1.append(cand1['nome'])
+           else:
+                 print('*' * 50)
+                 n_aprovado1.append(cand1['nome'])
                    
 >>REFERENTE AO SEGUNDO MENU DE CONDICIONAIS:
 
-                    if 'Analise de dados' in cand1.values() and 'DADOS' in cand1.values() and 'SQL' in cand1.values():
-                        print("*" * 50)
-                        vaga2.append(cand1['nome'])
-                    else:
-                        print('*' * 50)
-                        n_aprovado2.append(cand1['nome'])
+            if 'Analise de dados' in cand1.values() and 'DADOS' in cand1.values() and 'SQL' in cand1.values():
+                  print("*" * 50)
+                  vaga2.append(cand1['nome'])
+            else:
+                  print('*' * 50)
+                  n_aprovado2.append(cand1['nome'])
 
