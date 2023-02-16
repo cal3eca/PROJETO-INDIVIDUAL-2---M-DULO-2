@@ -21,7 +21,7 @@ import pandas as pd
 
 
 def listas():
-    print("Bem vindo ao programa, cadastre seu candidato e coloque 5 palavras chave sobre seu currículo.")
+    print("Bem vindo ao programa, cadastre seu candidato e coloque 3 palavras chave sobre seu currículo.")
 vaga1 = []
 vaga2 = []
 n_aprovado1 = []
