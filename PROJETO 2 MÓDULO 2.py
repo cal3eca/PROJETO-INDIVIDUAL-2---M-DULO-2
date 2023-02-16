@@ -16,9 +16,9 @@ Para isso, nosso código Python vai checar para qual vaga a
 pessoa se inscreveu e o resumo que a pessoa enviou em
 busca dessas informações.
 '''
-
-from os import system as sy
+import os
 import pandas as pd
+print(dir(pd))
 
 
 def listas():
@@ -35,11 +35,11 @@ def aprovado():
         tipo_vaga = int(input('DIGITE (1)PARA A VAGA 1:\nDIGITE (2)PARA A VAGA 2: \n'))
         if tipo_vaga == 1:
             print('A VAGA BUSCADA É 1')
-            cand1 = {'nome': input('Digite o nome: '), 'p1': input('Digite a Primeira palavra chave: '),
-                     'p2': input('Digite a segunda palavra chave: '), 'p3': input('Digite a terceira palavra chave: '),
-                     'p4': input('Digite a quarta palavra chave: ')
+            cand1 = {'nome': input('Digite o nome: ').title(), 'p1': input('Digite a Primeira palavra chave: ').lower(),
+                     'p2': input('Digite a segunda palavra chave: ').lower(), 'p3': input('Digite a terceira palavra chave: ').lower(),
                      }
-            if 'Python' in cand1.values() and 'Programação' in cand1.values() and 'Desenvolvimento' in cand1.values():
+            os.system('cls')
+            if 'python' in cand1.values() and 'programação' in cand1.values() and 'desenvolvimento' in cand1.values():
                 print("*" * 50)
                 vaga1.append(cand1['nome'])
             else:
@@ -47,11 +47,11 @@ def aprovado():
                 n_aprovado1.append(cand1['nome'])
         if tipo_vaga == 2:
             print('A VAGA BUSCADA É 2')
-            cand1 = {'nome': input('Digite o nome: '), 'p1': input('Digite a Primeira palavra chave: '),
-                     'p2': input('Digite a segunda palavra chave: '), 'p3': input('Digite a terceira palavra chave: '),
-                     'p4': input('Digite a quarta palavra chave: ')
+            cand1 = {'nome': input('Digite o nome: ').title(), 'p1': input('Digite a Primeira palavra chave: ').lower(),
+                     'p2': input('Digite a segunda palavra chave: ').lower(), 'p3': input('Digite a terceira palavra chave: ').lower(),
                      }
-            if 'Analise de dados' in cand1.values() and 'DADOS' in cand1.values() and 'SQL' in cand1.values():
+            os.system('cls')
+            if 'analise de dados' in cand1.values() and 'dados' in cand1.values() and 'sql' in cand1.values():
                 print("*" * 50)
                 vaga2.append(cand1['nome'])
             else:
